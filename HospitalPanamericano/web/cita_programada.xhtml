@@ -61,9 +61,18 @@
                             2) Seleccione la jornada en prefiere para su cita</p>
                         <select name="horario" style="width: 15%;margin-left:7%">
                             <option selected="componente1"></option>  
-                            <option> Mañana </option>
-                            <option> Tarde </option>
-                            <option> Noche </option>
+                            <option> 06:00 am </option>
+                            <option> 06:30 am </option>
+                            <option> 07:00 am </option>
+                            <option> 07:30 am </option>
+                            <option> 09:00 am </option>
+                            <option> 09:30 am </option>
+                            <option> 12:00 pm </option>
+                            <option> 12:30 pm </option>
+                            <option> 01:00 pm </option>
+                            <option> 01:30 pm </option>
+                            <option> 03:00 pm </option>
+                            <option> 03:30 pm </option>
                         </select>
                         <p:graphicImage url="/recursos/reloj.jpg" style="width:25px; height: 25px; position: absolute; padding-left: 1%"/>
                         <p style="margin-left:5%">
@@ -76,14 +85,45 @@
                             <option>Teleradiología </option>
                         </select>
 
-                        <p style="margin-left:5%">4) Seleccione el especialista que desee</p>
+                        <p style="margin-left:5%">
+                            4) Seleccione el especialista que desee</p>
 
                         <p:multiSelectListbox  value="#{selec_especialista.seleccion}" style="margin-left:7%">
                             <f:selectItems value="#{selec_especialista.categorias}" />
                         </p:multiSelectListbox>
-                        <p:commandButton value="Save" icon="ui-icon-check" update="out" style="display:block;margin:10px 0" />
-                        <h:outputText id="out" value="Value: #{selec_especialista.seleccion}" style="display:block" />
-                        
+                        <p:commandButton value="Save" icon="ui-icon-check" update="out" style="display:block;margin:10px 0;margin-left:7% " />
+                        <h:outputText id="out" value="Value: #{selec_especialista.seleccion}" style="display:block;margin-left:7% " />
+
+                        <table style="background-color:#95a1f7;padding:2%; margin-left:56%;position: fixed; margin-top:-30%; border-radius:25px">
+                            <tr>
+                                <th colspan="2" style="padding-bottom:3% ">
+                                    Línea de atención <br/>al usuario
+                                </th>
+
+                            </tr>
+                            <tr style="padding-bottom:3%">
+                                <td>
+                                    <p:graphicImage url="/recursos/telefono.png" style=" padding-right:2%;width: 20px; height: 20px "/>
+                                </td>
+                                <td>Línea Nacional<br/>
+                                    5555 55555</td>
+                            </tr>
+                            <tr style="padding-bottom:3%">
+                                <td>
+                                    <p:graphicImage url="/recursos/telefono.png" style="padding-right:2%;width: 20px; height: 20px "/>
+                                </td>
+                                <td>Bogotá<br/>
+                                    3333 33333</td>    
+                            </tr>
+                            <tr style="padding-bottom:3%">
+                                <td>
+                                    <p:graphicImage url="/recursos/calendario.png" style="padding-right:2%;width: 20px; height: 20px "/>
+                                </td>
+                                <td>Solicitar cita<br/>
+                                    4444 44444</td>    
+                            </tr>
+                        </table>
+
                         <h6 style="margin-top:15%; margin-left:35%">Copyright
                             <p:graphicImage url="/recursos/Copyright.png" style="width: 2%; height: 2% "/> 216</h6>
                     </p:layoutUnit> 

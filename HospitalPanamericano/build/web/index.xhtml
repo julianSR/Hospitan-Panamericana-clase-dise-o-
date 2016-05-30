@@ -20,13 +20,13 @@
                 <h:outputLink value="javascript:void(0)" onclick="PF('dlg').show();" title="login">
                     <p:graphicImage style="margin-left:620px; margin-top:auto; border-radius: 10%" url="/recursos/login.jpg"   />
                 </h:outputLink>
-              <p:button style="margin-left:650px; margin-top:auto" value="Registrate"/>
+              <p:button style="margin-left:650px; margin-top:auto; border-radius: " value="Registrate"/>
                   
                         <p:growl id="growl" sticky="true" showDetail="true" life="3000"/>
                         <p:dialog header="Login" widgetVar="dlg" resizable="false">
                             <h:panelGrid columns="2" cellpadding="5">
                                 <h:outputLabel for="usuario" value="Usuario: "/>
-                                <p:inputText id="usuario" value="#{login.usuario}" required="true" label="username"/>
+                                <p:inputText  id="usuario" value="#{login.usuario}" required="true" label="username" style="border-bottom: 30%"/>
                                 <h:outputLabel for="password" value="password:" />
                                 <p:password id="password" value="#{login.password}" required="true" label="password" />
                                 
